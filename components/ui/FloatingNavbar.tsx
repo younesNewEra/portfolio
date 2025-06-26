@@ -74,13 +74,15 @@ export const FloatingNav = ({
           <button
             key={`link=${idx}`}
             onClick={() => {
-              const element = document.querySelector(navItem.link) as HTMLElement;
-              if (element) {
-                const offsetTop = element.offsetTop - 100; // Account for fixed navbar height
-                window.scrollTo({
-                  top: offsetTop,
-                  behavior: 'smooth'
-                });
+              if (typeof document !== 'undefined') {
+                const element = document.querySelector(navItem.link) as HTMLElement;
+                if (element) {
+                  const offsetTop = element.offsetTop - 100; // Account for fixed navbar height
+                  window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                  });
+                }
               }
             }}
             className={cn(

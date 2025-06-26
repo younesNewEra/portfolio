@@ -65,13 +65,15 @@ const Hero = () => {
             icon={<FaLocationArrow />}
             position="right"
             handleClick={() => {
-              const element = document.querySelector("#about") as HTMLElement;
-              if (element) {
-                const offsetTop = element.offsetTop - 100;
-                window.scrollTo({
-                  top: offsetTop,
-                  behavior: 'smooth'
-                });
+              if (typeof document !== 'undefined') {
+                const element = document.querySelector("#about") as HTMLElement;
+                if (element) {
+                  const offsetTop = element.offsetTop - 100;
+                  window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                  });
+                }
               }
             }}
           />
