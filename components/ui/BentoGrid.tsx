@@ -2,12 +2,10 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import dynamic from "next/dynamic";
 
-// Also install this npm i --save-dev @types/react-lottie
 // Import Lottie dynamically to avoid SSR issues
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 import { cn } from "@/lib/utils";
-
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
@@ -59,15 +57,6 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
     navigator.clipboard.writeText(text);
@@ -101,8 +90,9 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
@@ -178,11 +168,15 @@ export const BentoGridItem = ({
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-5 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie
+                  animationData={animationData}
+                  loop={copied}
+                  style={{ height: 200, width: 400 }}
+                />
               </div>
 
               <MagicButton

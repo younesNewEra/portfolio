@@ -21,8 +21,8 @@ const Footer = () => {
           innovation to the next level?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to inodev.dz today and let&apos;s discuss how we can help you
-          achieve your innovative development goals.
+          Reach out to inodev.dz today and let&apos;s discuss how we can help
+          you achieve your innovative development goals.
         </p>
         <a href="mailto:contact@inodev.dz">
           <MagicButton

@@ -8,12 +8,13 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "We prioritize innovation collaboration, fostering creative communication",
+    title:
+      "We prioritize innovation collaboration, fostering creative communication",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/grid1.jpg",
     spareImg: "",
   },
   {
@@ -38,7 +39,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Innovation enthusiasts with a passion for cutting-edge development.",
+    title:
+      "Innovation enthusiasts with a passion for cutting-edge development.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,68 +74,68 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "clothing ecommerce website",
+    des: "buy your clothes online with our ecommerce website. We offer a wide range of clothing options for all styles and preferences.",
+    img: "/ecom-screen.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "pc builder",
+    des: "build your own custom PC with our PC builder app. Choose from a wide range of components and create the perfect machine for your needs.",
+    img: "/pcBuilder-screen.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "fleet management system",
+    des: "manage your fleet efficiently with our Fleet Management System. Track vehicles, monitor performance, and optimize routes for better efficiency.",
+    img: "/managment-screen.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "ex..ample project",
+    des: "This is an example project showcasing our capabilities in web development. It includes various features and functionalities to demonstrate our expertise.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The ecommerce website developed by inodev.dz completely transformed our online presence. The intuitive design and seamless shopping experience increased our sales by 300% within the first month. Their attention to detail and user experience is exceptional.",
+    name: "Amina Benamara",
+    title: "Owner of Alger Fashion Store",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Our fleet management system has revolutionized how we operate. Real-time tracking, automated maintenance alerts, and detailed analytics have improved our efficiency by 40%. The system is intuitive and our drivers love the mobile interface.",
+    name: "Karim Boudjelal",
+    title: "Manager at Constantine Transport Services",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The PC builder application is a game-changer for our customers. The compatibility checking and 3D visualization features have reduced customer support queries by 60% and increased our conversion rate significantly. Outstanding work!",
+    name: "Yasmine Khelifi",
+    title: "Technical Manager at Oran Tech Solutions",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with inodev.dz was an incredible experience. Their innovative approach to web development and commitment to delivering cutting-edge solutions exceeded all our expectations. They truly understand modern digital needs.",
+    name: "Omar Benhadj",
+    title: "Business Owner at Tlemcen Digital Hub",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The quality of code and architecture delivered by inodev.dz is remarkable. Their solutions are not just functional but also scalable and maintainable. They've become our go-to partner for all complex development projects.",
+    name: "Fatima Meziani",
+    title: "Lead Developer at Annaba Web Studio",
   },
 ];
 

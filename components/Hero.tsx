@@ -20,7 +20,10 @@ const Hero = () => {
           className="h-[80vh] w-[50vw] top-10 left-full"
           fill="#333333"
         />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="#666666" />
+        <Spotlight
+          className="left-80 top-28 h-[80vh] w-[50vw]"
+          fill="#666666"
+        />
       </div>
 
       {/**
@@ -57,7 +60,8 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m from <span className="font-semibold">inodev.dz</span> - Innovative Development Solutions
+            Hi! I&apos;m from <span className="font-semibold">inodev.dz</span> -
+            Innovative Development Solutions
           </p>
 
           <MagicButton
@@ -65,13 +69,13 @@ const Hero = () => {
             icon={<FaLocationArrow />}
             position="right"
             handleClick={() => {
-              if (typeof document !== 'undefined') {
+              if (typeof document !== "undefined") {
                 const element = document.querySelector("#about") as HTMLElement;
                 if (element) {
                   const offsetTop = element.offsetTop - 100;
                   window.scrollTo({
                     top: offsetTop,
-                    behavior: 'smooth'
+                    behavior: "smooth",
                   });
                 }
               }
