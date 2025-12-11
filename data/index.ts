@@ -82,11 +82,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "pc builder",
-    des: "build your own custom PC with our PC builder app. Choose from a wide range of components and create the perfect machine for your needs.",
-    img: "/pcBuilder-screen.jpg",
+    title: "delta school",
+    des: "elearning platform for schools. Access courses, assignments, and resources online to enhance your learning experience.",
+    img: "/deltascreen.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "",
+    link: "https://deltaschool.cloud",
   },
   {
     id: 3,
@@ -98,9 +98,9 @@ export const projects = [
   },
   {
     id: 4,
-    title: "ex..ample project",
-    des: "This is an example project showcasing our capabilities in web development. It includes various features and functionalities to demonstrate our expertise.",
-    img: "/p4.svg",
+    title: "clinic pro",
+    des: "manage your clinic with our Clinic Pro app. Schedule appointments, manage patient records, and streamline your clinic operations.",
+    img: "/clinic-screen.jpg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "",
   },

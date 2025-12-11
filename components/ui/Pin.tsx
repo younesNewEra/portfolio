@@ -10,12 +10,14 @@ export const PinContainer = ({
   href,
   className,
   containerClassName,
+  openOnClick,
 }: {
   children: React.ReactNode;
   title?: string;
   href?: string;
   className?: string;
   containerClassName?: string;
+  openOnClick?: boolean;
 }) => {
   const [transform, setTransform] = useState(
     "translate(-50%,-50%) rotateX(0deg)"
@@ -36,6 +38,16 @@ export const PinContainer = ({
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={() => {
+        if (openOnClick && href) {
+          try {
+            window.open(href, "_blank", "noopener,noreferrer");
+          } catch (e) {
+            // fallback for environments where window may not be available
+            // noop
+          }
+        }
+      }}
     >
       <div
         style={{
